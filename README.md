@@ -5,15 +5,16 @@ La aplicación consiste en una biblioteca web que implementa el API de [SWAPI](h
 
 ## Tecnologías
 
-HTML
-JavaScript
-Css
+- HTML
+- JavaScript
+- Css
 
-nodeJS - serve
-PostMan
+- nodeJS - serve (Servidor frontal)
+- PostMan (Pruebas API)
 
 ## Como empezar
 
+Se necesita NPM para poder instalar el servidor frontal.
 Dentro de la raiz de la carpeta abrimos una consola y ejecutamos `npm install` para instalar las dependencias. Despues de eso usaremos `npx serve` para lanzar un servidor de desarrollo y ver el proyecto.
 
 ## Autor
@@ -29,20 +30,19 @@ Gracias a esto he tenido la oportunidad de tener el control de toda la estructur
 
 ### Estructura
 
-``Controladores`` - Llevan a cabo la lógica enlazada con una vista.
-``Vistas`` - Muestran el contenido genérico de una parte de la aplicación
-``Enrutador`` - Gestiona el sistema de enrutamiento, las vistas que se van a mostrar y sus controladores
-``API`` - Utilidad para hacer peticiones http y gestionar errores
+- ``Controladores`` - Llevan a cabo la lógica enlazada con una vista.
+- ``Vistas`` - Muestran el contenido genérico de una parte de la aplicación
+- ``Enrutador`` - Gestiona el sistema de enrutamiento, las vistas que se van a mostrar y sus controladores
+- ``API`` - Utilidad para hacer peticiones http y gestionar errores
 
 ### Extras
 
-`Loader` - Cargador animado con imagen de Star Wars.
-`Paginador` - Paginador para gestionar las páginas de la colección visualizada.
-`Buscador` - Buscador para filtrar la colección visualizada.
-`404 not found` - Página personalizada para rutas no existentes.
-`Detalles` - Página de detalles donde se podrá ver un registro en detalle, además se mostrará brevemente los otros registros con los que está enlazado y permitirá viajar a visualizar esa colección.
+- `Loader` - Cargador animado con imagen de Star Wars.
+- `Paginador` - Paginador para gestionar las páginas de la colección visualizada.
+- `Buscador` - Buscador para filtrar la colección visualizada.
+- `404 not found` - Página personalizada para rutas no existentes.
+- `Detalles` - Página de detalles donde se podrá ver un registro en detalle, además se mostrará brevemente los otros registros con los que está enlazado y permitirá viajar a visualizar esa colección.
 
 ### Bonus round
 
-Como bonus round se ha incluido en la estructura un mecanismo para añadir un retardo configurable en las peticiones http que puede ocurrir 1 de cada 10 veces, además de
-un error configurable que se lanza en las peticiones http 1 de cada 20 veces. En la parte inferior de la aplicación se puede activar y desactivar este mecanismo además de elegir el retardo y el error deseado.
+Como bonus round se ha incluido en la estructura un mecanismo para añadir un retardo configurable en las peticiones http que puede ocurrir 1 de cada 10 veces, además de un error configurable que se lanza en las peticiones http 1 de cada 20 veces. En la parte inferior de la aplicación se puede activar y desactivar este mecanismo además de elegir el retardo y el error deseado.
