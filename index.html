@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>STAR WARS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+    <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body id="body">
+    <!-- Navegador -->
+    <nav class="noselect">
+        <a class="custom-link" href="#/planetas">
+            <div class="logo">
+                <h2>STAR WARS</h2>
+            </div>
+        </a>
+        <ul>
+            <a class="custom-link" href="#/planetas">
+                <li class="nav-link" data-id="planetas" data-detail-id="detalles_planeta">
+                    planetas
+                </li>
+            </a>
+
+            <a class="custom-link" href="#/naves">
+                <li class="nav-link" data-id="naves" data-detail-id="detalles_nave">
+                    naves
+                </li>
+            </a>
+
+            <a class="custom-link" href="#/vehiculos">
+                <li class="nav-link" data-id="vehiculos" data-detail-id="detalles_vehiculo">
+                    vehículos
+                </li>
+            </a>
+
+            <a class="custom-link" href="#/personajes">
+                <li class="nav-link" data-id="personajes" data-detail-id="detalles_personaje">
+                    personajes
+                </li>
+            </a>
+
+            <a class="custom-link" href="#/especies">
+                <li class="nav-link" data-id="especies" data-detail-id="detalles_especie">
+                    especies
+                </li>
+            </a>
+
+            <a class="custom-link" href="#/peliculas">
+                <li class="nav-link" data-id="peliculas" data-detail-id="detalles_pelicula">
+                    peliculas
+                </li>
+            </a>
+
+
+        </ul>
+    </nav>
+
+    <section id="error-message" class="error-card hidden">
+        <img src="/src/assets/triangle-exclamation-solid.svg" alt="Icono de error" width="30" height="30">
+        <p class="error-text">Lo sentimos, ha ocurrido un error.</p>
+        <button id="close_error" type="button" class="btn-close"></button>
+    </section>
+
+
+
+    <div id="overlay-loader" class="overlay noselect">
+        <div class="loader-container">
+            <div class="loader">
+                <img src="/src/assets/loader.gif" alt="Loader" width="250">
+            </div>
+            <h4>Cargando...</h4>
+        </div>
+    </div>
+
+
+
+    <!-- Vista -->
+    <section id="rootElement"></section>
+
+
+    <!-- Configuración de errores customizables -->
+
+    <div class="custom-errors d-flex justify-center align-center noselect">
+        <div>
+            <label for="errorCheckbox">
+                Custom errors:</label>
+            <input id="errorCheckbox" type="checkbox">
+        </div>
+        <div>
+            <label for="ms-input">Tiempo de retardo (ms):</label>
+            <input type="number" id="ms-input" value="0" disabled>
+            <button id="ms-button" disabled>Actualizar</button>
+        </div>
+        <div>
+            <label for="msg-input">Mensaje de error personalizado:</label>
+            <input type="text" id="msg-input" value="" disabled>
+            <button id="msg-button" disabled>Actualizar</button>
+        </div>
+
+    </div>
+</body>
+
+
+
+<script type="module" src="./src/main.js"></script>
+
+</html>
