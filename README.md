@@ -9,7 +9,7 @@ La aplicación consiste en una biblioteca web que implementa el API de [SWAPI](h
 - JavaScript
 - Css
 
-- nodeJS - serve (Servidor frontal)
+- NodeJS (Serve como servidor frontal)
 - PostMan (Pruebas API)
 
 ## Como empezar
@@ -24,16 +24,16 @@ Dentro de la raiz de la carpeta abrimos una consola y ejecutamos `npm install` p
 
 ### En que consiste
 
-El proyecto consistía en desarrollar una SPA (Single Page Application) desde cero sin utilizar ningún tipo de framework o librería de utilidades. Existen muchas tecnologías para facilitar estos trabajos pero también es muy importante el entendimiento de como está construido todo. 
+El objetivo del proyecto se centró en el desarrollo de una SPA (Single Page Application) desde cero, sin hacer uso de frameworks o cualquier librería de utilidades. A pesar de la existencia de múltiples tecnologías que facilitan este tipo de trabajo, es crucial contar con un conocimiento profundo acerca de la estructura de la aplicación en sí.
 
-Gracias a esto he tenido la oportunidad de tener el control de toda la estructura de mi proyecto así como de mejorar mis habilidades de programación.
+Gracias a este enfoque, se me brindó la oportunidad de ejercer un control total sobre la arquitectura de mi proyecto, al mismo tiempo que pude perfeccionar mis habilidades en programación y amplicar mis conocimientos en las tecnologías que utilizo habitualmente para trabajar.
 
 ### Estructura
 
-- ``Controladores`` - Llevan a cabo la lógica enlazada con una vista.
-- ``Vistas`` - Muestran el contenido genérico de una parte de la aplicación
-- ``Enrutador`` - Gestiona el sistema de enrutamiento, las vistas que se van a mostrar y sus controladores
-- ``API`` - Utilidad para hacer peticiones http y gestionar errores
+- `Controladores` - Llevan a cabo la lógica enlazada con una vista.
+- `Vistas` - Muestran el contenido genérico de una parte de la aplicación
+- `Enrutador` - Gestiona el sistema de enrutamiento, las vistas que se van a mostrar y sus controladores
+- `API` - Utilidad para hacer peticiones http y gestionar errores
 
 ### Extras
 
